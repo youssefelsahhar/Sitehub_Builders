@@ -658,9 +658,19 @@ h6 {
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: white;
+  background-image: url("../img/wallpaper3.png"); /* your wallpaper */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
+}
+
+.page-title::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
 }
 
 .page-title .heading {
@@ -671,6 +681,11 @@ h6 {
 .page-title .heading h1 {
   font-size: 64px;
   font-weight: 400;
+}
+
+.page-title .container {
+  position: relative;
+  z-index: 2;
 }
 
 .page-title .heading .cta-btn {
@@ -784,6 +799,23 @@ section,
   padding: 120px 0 60px 0;
   display: flex;
   align-items: center;
+  background-image: url("../img/wallpaper3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero h2 {
